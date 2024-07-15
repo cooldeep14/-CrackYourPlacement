@@ -1,0 +1,12 @@
+Question:- https://leetcode.com/problems/find-the-duplicate-number/ 
+
+sort(nums.begin(),nums.end());
+       int s=0,e=1;
+        while(e<=nums.size())
+        {
+            if(nums[s]==nums[e])
+            return nums[e];
+
+            s++;e++;
+        }
+        return 0;
